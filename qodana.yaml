@@ -11,17 +11,13 @@ include:
   - name: CheckValidXmlInScriptTagBody
   - name: NonAsciiCharacters
   - name: JsonSchemaRefReference
-  - name: PyCompatibilityInspection
   - name: PyArgumentListInspection
   - name: PyTypeCheckerInspection
-  - name: PyUnresolvedReferencesInspection
-  - name: UnresolvedReference
   - name: ShellCheck
   - name: XmlDuplicatedId
   - name: CheckXmlFileWithXercesValidator
   - name: XmlUnboundNsPrefix
   - name: XmlPathReference
-  - name: XmlUnresolvedReference
   - name: XmlWrongRootElement
   - name: XmlHighlighting
   - name: YAMLSchemaDeprecation
@@ -72,3 +68,5 @@ exclude:
   - name: RegExpSimplifiable
   - name: RegExpSingleCharAlternation
   - name: RegExpUnnecessaryNonCapturingGroup
+  - name: TomlUnresolvedReference
+  - name: PyStubPackagesCompatibilityInspection
