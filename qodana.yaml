@@ -23,7 +23,6 @@ include:
   - name: YAMLSchemaDeprecation
   - name: YAMLDuplicatedKeys
   - name: YAMLRecursiveAlias
-  - name: YAMLIncompatibleTypes
   - name: YAMLUnresolvedAlias
   - name: YAMLSchemaValidation
 exclude:
@@ -70,3 +69,5 @@ exclude:
   - name: RegExpUnnecessaryNonCapturingGroup
   - name: TomlUnresolvedReference
   - name: PyStubPackagesCompatibilityInspection
+  - name: PyShadowingBuiltinsInspection
+  - name: PyShadowingNamesInspection
