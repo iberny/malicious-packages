@@ -1,10 +1,74 @@
 ####################################################################################################################
 # WARNING: Do not store sensitive information in this file, as its contents will be included in the Qodana report. #
 ####################################################################################################################
-
 version: "1.0"
 linter: jetbrains/qodana-python-community:2025.2
 profile:
   name: qodana.recommended
 include:
   - name: CheckDependencyLicenses
+  - name: Annotator
+  - name: CheckValidXmlInScriptTagBody
+  - name: NonAsciiCharacters
+  - name: JsonSchemaRefReference
+  - name: PyCompatibilityInspection
+  - name: PyArgumentListInspection
+  - name: PyTypeCheckerInspection
+  - name: PyUnresolvedReferencesInspection
+  - name: UnresolvedReference
+  - name: ShellCheck
+  - name: XmlDuplicatedId
+  - name: CheckXmlFileWithXercesValidator
+  - name: XmlUnboundNsPrefix
+  - name: XmlPathReference
+  - name: XmlUnresolvedReference
+  - name: XmlWrongRootElement
+  - name: XmlHighlighting
+  - name: YAMLSchemaDeprecation
+  - name: YAMLDuplicatedKeys
+  - name: YAMLRecursiveAlias
+  - name: YAMLIncompatibleTypes
+  - name: YAMLUnresolvedAlias
+  - name: YAMLSchemaValidation
+exclude:
+  - name: PyNoneFunctionAssignmentInspection
+  - name: PyClassHasNoInitInspection
+  - name: PyDecoratorInspection
+  - name: PyDictDuplicateKeysInspection
+  - name: PyDictCreationInspection
+  - name: PyExceptionInheritInspection
+  - name: PyTestUnpassedFixtureInspection
+  - name: PySetFunctionToLiteralInspection
+  - name: PyMethodParametersInspection
+  - name: PyFromFutureImportInspection
+  - name: PyInitNewSignatureInspection
+  - name: PyInconsistentIndentationInspection
+  - name: PyIncorrectDocstringInspection
+  - name: PyNamedTupleInspection
+  - name: PyTypeHintsInspection
+  - name: PyClassVarInspection
+  - name: PyListCreationInspection
+  - name: PyPep8Inspection
+  - name: PyPep8NamingInspection
+  - name: PyNestedDecoratorsInspection
+  - name: PySimplifyBooleanCheckInspection
+  - name: PyRedundantParenthesesInspection
+  - name: PyStatementEffectInspection
+  - name: PySingleQuotedDocstringInspection
+  - name: PyStubPackagesAdvertiser
+  - name: PyChainedComparisonsInspection
+  - name: PyBroadExceptionInspection
+  - name: PyUnnecessaryBackslashInspection
+  - name: PyUnusedImportsInspection
+  - name: PyUnusedLocalInspection
+  - name: PyComparisonWithNoneInspection
+  - name: RegExpRepeatedSpace
+  - name: RegExpDuplicateAlternationBranch
+  - name: RegExpDuplicateCharacterInClass
+  - name: RegExpEmptyAlternationBranch
+  - name: RegExpRedundantClassElement
+  - name: RegExpRedundantEscape
+  - name: RegExpRedundantNestedCharacterClass
+  - name: RegExpSimplifiable
+  - name: RegExpSingleCharAlternation
+  - name: RegExpUnnecessaryNonCapturingGroup
